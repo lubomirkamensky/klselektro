@@ -1,0 +1,60 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/forma.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+function vypocitej()
+{
+cena=splatky.cena.value;
+platba=splatky.platba.value;
+pocet=splatky.pocet.value;
+splatka2=cena-platba;
+splatka1=splatka2/pocet;
+urok=splatka2*0.00
+splatka=splatka1+urok
+splatky.splatka.value=splatka;
+}
+</SCRIPT>
+</head>
+
+<body style="background-color: #FFFFFF;">
+<h2>Nakoupit u nás můžete i na splátky bez navýšení</h2>
+<p>I bez první přímé platby u nás můžete získat splátky bez navýšení až na jeden rok!<br><br>
+Našim obchodním partnerem v oblasti splátek je společnost Cetelem.</p>
+<hr>
+<p>
+<b>Zde si můžete splátky vypočítat sami.</b></p>
+<FORM NAME="splatky">
+<table>
+<tr><td>
+Cena zboží:</td>
+<td><INPUT TYPE="text" SIZE=5 NAME="cena"> Kč</td>
+<td>- může být v rozmezí 3.000 - 30.000 Kč
+</td></tr>
+<tr><td>
+Přímá platba:</td>
+<td><INPUT TYPE="text" SIZE=5 NAME="platba"> Kč</td>
+<td>- platba při převzetí zboží (může být nulová)
+</td></tr>
+<tr><td>Počet splátek:</td>
+<td><input type="text" size=5 name="pocet"> x</td>
+<td>- nejméně 6, nejvíce 12 splátek.</td></tr>
+<tr><td></td><td><INPUT TYPE="button" VALUE="výpočet" ONCLICK="vypocitej()"><br></td></tr>
+<tr><td>
+Výše splátek:</td><td><INPUT TYPE="text" SIZE=5 NAME="splatka"> Kč<br></td></tr>
+</table>
+</FORM>
+<hr>
+<p><b>Doklady potřebné k nákupu na splátky:</b><br>
+Občanský průkaz a jako druhý doklad může sloužit: kartička pojišťovny, cestovní pas, řidičský průkaz nebo bankomatní karta.
+<hr>
+<p>
+Platit můžete i úvěrovými kartami <b>Aura.</b>
+Příjmáme také úvěrové karty Yes, Česká Pojišťovna a jiné, které mají logo Ciruss Maestro, Eurocard, Mastercard, nebo Visa a jsou aktivovány.
+</p>
+<hr>
+<p>
+Máte dotaz? Chcete další informace? Neváhejte se nás zeptat: <a href="mailto:info@klselektro.cz">info@klselektro.cz.</a>
+</body>
+</html>

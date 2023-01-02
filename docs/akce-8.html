@@ -1,0 +1,76 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/forma.css">
+</head>
+<body>
+<table><tr><td ALIGN="CENTER">
+<!-- <h3>Akční nabídku si můžete prohlédnout na stránkách 
+<a href="http://www.planeo.cz/" target="_blank">Planeo</a>.</h3>
+<h3>Další akci si můžete prohlédnout na stránkách 
+<a href="http://www.topaktuell.cz/" target="_blank">Top Aktuell</a>.</h3>-->
+<table>
+<tr>
+<td>
+<script language="JavaScript" type="text/javascript">
+
+function showPhoto(x,y,file,comment,close)
+{
+	var w = screen.availWidth||screen.width
+	var h = screen.availHeight||screen.height
+	var move_win = 0
+	wx = x+50; wy = y +50;
+	h -= 30; w -= 30;
+	if (wx>w) { wx = w; move_win=1 }
+	if (wy>h) { wy = h; move_win=1 }
+	if (!comment) {	comment = '' }
+	file = "img/letak/big/"+file
+	var data_close = ""
+	if (close==1)
+		data_close ="onClick='window.close()' style='cursor: hand; cursor: pointer; '"
+	var data = "<html><title>Akční nabídka KLS elektro s.r.o.</title><body bgcolor='#ffffff' style=\"margin: 5px;\"><div align=center>"+comment+"<br><img src='"+file+"' width="+x+" height="+y+" border=1 "+data_close+" alt='Zavřít okno'></div><br><br></body></html>"
+	var aa = window.open("", 'fotka', 'resizable,toolbar=no,location=no,status=no,scrollbars=yes,menubar=0,width=' + wx + ',height=' + wy);
+	if (move_win==1) { aa.moveTo(0,0) }
+	aa.document.write(data)
+	aa.document.close();
+	aa.focus();
+} 
+</script>
+<table border="0">
+<tr><td style="text-align: center;">
+<a href="#o" onClick="showPhoto(1000,1500,'Planeo-1.jpg','',1)" class="image_border"><img src="img/letak/small/Planeo-1.jpg" height="495" width="350" alt="" border="0"><br>zobrazit (jpg)</a>
+</td>
+<td style="text-align: center;">
+<a href="#o" onClick="showPhoto(1000,1500,'Planeo-2.jpg','',1)" class="image_border"><img src="img/letak/small/Planeo-2.jpg" height="495" width="350" alt="" border="0"><br>zobrazit (jpg)</a>
+</td></tr></table><br>
+<table>
+<tr>
+<td style="text-align: center;">
+<a href="#o" onClick="showPhoto(1000,1500,'Planeo-3.jpg','',1)" class="image_border"><img src="img/letak/small/Planeo-3.jpg" height="495" width="350" alt="" border="0"><br>zobrazit (jpg)</a>
+</td><td style="text-align: center;">
+<a href="#o" onClick="showPhoto(1000,1500,'Planeo-4.jpg','',1)" class="image_border"><img src="img/letak/small/Planeo-4.jpg" height="495" width="350" alt="" border="0"><br>zobrazit (jpg)</a>
+</td></tr></table><br>
+
+
+<table>
+<tr><td style="text-align: center;">
+<a href="#o" onClick="showPhoto(1000,1500,'Planeo-5.jpg','',1)" class="image_border"><img src="img/letak/small/Planeo-5.jpg" height="495" width="350" alt="" border="0"><br>zobrazit (jpg)</a>
+</td>
+<td style="text-align: center;">
+<a href="#o" onClick="showPhoto(1000,1500,'Planeo-6.jpg','',1)" class="image_border"><img src="img/letak/small/Planeo-6.jpg" height="495" width="350" alt="" border="0"><br>zobrazit (jpg)</a>
+</td></tr></table><br>
+
+<table><tr><td style="text-align: center;">
+<a href="#o" onClick="showPhoto(1000,1500,'Planeo-7.jpg','',1)" class="image_border"><img src="img/letak/small/Planeo-7.jpg" height="495" width="350" alt="" border="0"><br>zobrazit (jpg)</a>
+</td><td style="text-align: center;">
+<a href="#o" onClick="showPhoto(1000,1500,'Planeo-8.jpg','',1)" class="image_border"><img src="img/letak/small/Planeo-8.jpg" height="495" width="350" alt="" border="0"><br>zobrazit (jpg)</a>
+</td></tr></table>
+
+
+</td></tr>
+<tr><td colspan="2" style="text-align: center; padding-top: 10px; padding-bottom: 10px;"><a href="img/letak/Planeo.pdf" target="_blank" class="OdkazModry">Stáhnout celý leták (pdf)</a>
+</table>
+
+
+</body>
+</html>
